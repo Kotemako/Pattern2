@@ -45,13 +45,17 @@ public class DataGenerator {
     public static String getRandomLogin() {
         // TODO: добавить логику для объявления переменной login и задания её значения, для генерации
         //  случайного логина используйте faker
-        return faker.name().firstName();
+        String login = faker.name().firstName();
+        return login;
+
     }
 
     public static String getRandomPassword() {
         // TODO: добавить логику для объявления переменной password и задания её значения, для генерации
         //  случайного пароля используйте faker
-        return faker.internet().password();
+        String password = faker.internet().password();
+        return password;
+
     }
 
     public static class Registration {
